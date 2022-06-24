@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/styleMain.css">
+    <link rel="stylesheet" href="styles/responsiveMain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Don Khan | Vendhq</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div id="black-note">
+                <div>
+                    <h3> Vend is officially Lightspeed! It's business as usual, only better. <a href="https://www.vendhq.com/lightspeed">Learn More</a></h3>
+                </div>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <section id="head">
+                <div class="head-left">
+                    <p>Talk to a Retail Specialist</p>
+
+                    <a class="call" onclick="showNumb()"><i class="fa fa-phone">+1-844-942-2...</i></a>
+                </div>
+
+                <div class="head-right">
+                    <a id="get-support" href="https://support.vendhq.com/hc/en-us" target="_blank">Get
+                        Support <i class="fa fa-long-arrow-right"></i></a>
+
+                    <div>
+                        <div>
+                            <p id="click" onclick="reveal()">&#127760; USA / Global <i class="fa fa-chevron-down"></i>
+                            </p>
+                        </div>
+
+                        <div id="choose" class="dropmenu">
+                            <ul>
+                                <a href="https://www.vendhq.com/?_pcc=us-zWlSkuMRUDEC"><li><span>&#127760;</span>USA/Global</li></a>
+                                <li><img src="/images/icons/Flag_of_Australia.svg">Australia</li>
+                                <li><img src="images/icons/Flag_of_New_Zealand.svg">New Zealand</li>
+                                <li><img src="images/icons/Flag_of_South_Africa.svg">South Africa</li>
+                                <li><img src="images/icons/Flag_of_the_United_Kingdom.svg">United Kingdom</li>
+                                <li><span><i class="fa fa-globe"></i></span> Asia</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://secure.vendhq.com/signin/?_ga=2.86472664.1552073229.1653922252-1351299249.1653922252"
+                        target="_blank" class="sign-in">Sign in <i class="fa fa-long-arrow-right"></i></a>
+
+                </div>
+
+            </section>
+
+            <nav>
+                <div id="nav-main">
+                    <a href="#" class="logo-space">
+                        <div>
+                            <img src="images/icons/Vend_(software)_logo.svg" alt="logo" class="logo" height="40px">
+                            <p class="logo-p">by Lightspeed</p>
+                        </div>
+                    </a>
+
+                    <div id="nav-middle">
+                        <ul>
+                            <div>
+                                <div>
+                                    <li id="nav-drop" onclick="openNav1()">why vend <i
+                                            class="fa fa-chevron-down rotate"></i></li>
+                                </div>
+
+                                <div id="nav-list-1" class="nav-drop-list">
+                                    <h3>benefits</h3>
+                                    <ol>
+                                        <li>Why Choose Vend</li>
+                                        <li>The 7 steps to Retail Success</li>
+                                        <li>Customer Case Studies</li>
+                                    </ol>
+
+                                    <h3>your business type</h3>
+                                    <ol>
+                                        <li>Fashion Boutiques</li>
+                                        <li>Homeware stores</li>
+                                        <li>Sports & Outdoors</li>
+                                        <li>All Business Types</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <li id="nav-drop" onclick="openNav2()">features<i class="fa fa-chevron-down"></i>
+                                    </li>
+                                </div>
+                                <div id="nav-list-2" class="nav-drop-list-2">
+                                    <ol>
+                                        <li>Why Choose Vend</li>
+                                        <li>The 7 steps to Retail Success</li>
+                                        <li>Customer Case Studies</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <li>multi store</li>
+                            <li>enterprise</li>
+                            <div>
+                                <div>
+                                    <li id="nav-drop" onclick="openNav3()">resources<i class="fa fa-chevron-down"></i>
+                                    </li>
+                                </div>
+                                <div id="nav-list-3" class="nav-drop-list-3">
+                                    <ol>
+                                        <li>Why Choose Vend</li>
+                                        <li>The 7 steps to Retail Success</li>
+                                        <li>Customer Case Studies</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <li id="nav-drop" onclick="openNav4()">demo<i class="fa fa-chevron-down"></i></li>
+                                </div>
+                                <div id="nav-list-4" class="nav-drop-list-4">
+                                    <ol>
+                                        <li>Why Choose Vend</li>
+                                        <li>The 7 steps to Retail Success</li>
+                                        <li>Customer Case Studies</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <li>pricing</li>
+                        </ul>
+                    </div>
+
+                    <div id="nav-right">
+                        <a href="https://www.vendhq.com/contact-sales"><button id="contact-sales-btn">contact
+                                sales</button></a>
+
+                        <a href="https://www.vendhq.com/signup"><button id="free-trial">free trial</button></a>
+                        <span id="menu" onclick="revealMenu()">
+                            <p><span>menu</span><i class="fa fa-bars"></i></p></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="menu-hide" id="menu-list">
+                    <ul>
+                        <div class="overide-menu-drop">
+                            <div>
+                                <li class="menu-sub-heads" onclick="openMenu1()">why vend <i
+                                        class="fa fa-chevron-down rotate"></i></li>
+                            </div>
+
+                            <div id="menu-list-1" class="menu-drop-list">
+                                <h3>benefits</h3>
+                                <ol>
+                                    <a href="https://www.vendhq.com/why-choose-vend">
+                                        <li>Why Choose Vend</li>
+                                    </a>
+                                    <a href="https://www.vendhq.com/retail-success">
+                                        <li>The 7 steps to Retail Success</li>
+                                    </a>
+                                    <a href="https://www.vendhq.com/customers">
+                                        <li>Customer Case Studies</li>
+                                    </a>
+                                </ol>
+
+                                <h3 class="mini-sub-head-second">your business type</h3>
+                                <ol>
+                                    <a href="https://www.vendhq.com/examples/fashion-boutique-pos">
+                                        <li>Fashion Boutiques</li>
+                                    </a>
+                                    <a href="https://www.vendhq.com/examples/homeware-and-gift-shop-pos">
+                                        <li>Homeware stores</li>
+                                    </a>
+                                    <a href="https://www.vendhq.com/examples/sports-and-outdoors-pos">
+                                        <li>Sports & Outdoors</li>
+                                    </a>
+                                    <a href="https://www.vendhq.com/examples">
+                                        <li>All Business Types</li>
+                                    </a>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="overide-menu-drop">
+                            <div>
+                                <li class="menu-sub-heads" onclick="openMenu2()">features<i
+                                        class="fa fa-chevron-down"></i>
+                                </li>
+                            </div>
+                            <div id="menu-list-2" class="menu-drop-list-2">
+                                <ol>
+                                    <li>Features overview</li>
+                                    <li>point-of-sale</li>
+                                    <li>inventory management</li>
+                                    <li>reporting and insights</li>
+                                    <li>hardware</li>
+                                    <li>payments</li>
+                                    <li>apps</li>
+                                    <li>ecommerce</li>
+                                    <li>customer management</li>
+                                    <li>Award winning support</li>
+                                    <li>scanner</li>
+                                    <li>security</li>
+                                    <li>product updates</li>
+                                    <li>marketing and loyalty</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <li class="menu-sub-heads">multi store</li>
+                        <li class="menu-sub-heads">enterprise</li>
+                        <div class="overide-menu-drop">
+                            <div>
+                                <li class="menu-sub-heads" onclick="openMenu3()">resources<i
+                                        class="fa fa-chevron-down"></i>
+                                </li>
+                            </div>
+                            <div id="menu-list-3" class="menu-drop-list-3">
+                                <h3>support & training</h3>
+                                <ol>
+                                    <li>help center</li>
+                                    <li>help videos</li>
+                                </ol>
+
+                                <h3 class="mini-sub-head-second">retail resources</h3>
+                                <ol>
+                                    <li>vend blog</li>
+                                    <li>all resources</li>
+                                    <li>guides & <span>e</span>Books</li>
+                                    <li>insights & reports</li>
+                                    <li>articles</li>
+                                    <li>webinars</li>
+                                    <li>videos</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="overide-menu-drop">
+                            <div>
+                                <li class="menu-sub-heads" onclick="openMenu4()">demo<i class="fa fa-chevron-down"></i>
+                                </li>
+                            </div>
+                            <div id="menu-list-4" class="menu-drop-list-4">
+                                <h3>see vend in action</h3>
+                                <ol>
+                                    <li>demo video</li>
+                                    <li>book <span>a</span> consultation</li>
+                                </ol>
+
+                                <h3 class="mini-sub-head-second">getting started</h3>
+                                <ol>
+                                    <li>how to get started</li>
+                                    <li>on-boarding services</li>
+                                    <li>find <span>a</span> local expert</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <li class="menu-sub-heads">pricing</li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+        <section id="S1">
+            <div id="S1-left">
+                <img src="images/green card.png" alt="logo" class="tag">
+
+                <div id="S1-writeup">
+                    <div>
+                        <h1 class="sub-heading">Drive growth through seamless omnichannel retail</h1>
+                        <p>Optimise your retail operations with our easy to use software platform</p>
+                    </div>
+
+                    <div>
+                        <a href="https://www.vendhq.com/signup"><button id="signin-btn">Try Vend for free</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="S1-right">
+                <img src="images/vend-homepage-2.jpg" alt="Happy worker">
+            </div>
+
+        </section>
+
+        <section id="S2">
+            <div id="S2-1">
+                <div id="S2-1-left">
+                    <h1><span class="hide1">Optimise your</span> Multi Store <span class="hide1">operation</span></h1>
+                    <p>Running a retail business across multiple outlets is challenging. Find out how Vend can help<span
+                            class="hide1"> your business increase efficiency and profitability</span></p>
+                </div>
+
+                <div id="S2-1-right">
+                    <a href="https://www.vendhq.com/multi-store-pos"><button>Get started</button></a>
+                </div>
+            </div>
+
+            <div id="S2-2">
+                <div class="comment">
+                    <a>
+                        <img src="images/star rating 1.png">
+                        <h3>"Best POS hands down!"</h3>
+                    </a>
+                </div>
+
+                <div class="comment">
+                    <a>
+                        <img src="images/star rating 1.png">
+                        <h3>"A breath of fresh air"</h3>
+                    </a>
+                </div>
+
+                <div class="comment">
+                    <a>
+                        <img src="images/star rating 1.png">
+                        <h3>"Their customer service is amazing!"</h3>
+                    </a>
+                </div>
+
+                <div class="comment">
+                    <a>
+                        <img src="images/star rating 1.png">
+                        <h3>"Vend is a game changer"</h3>
+                    </a>
+                </div>
+            </div>
+
+            <div id="S2-3">
+                <h1 class="sub-heading">20,000 customer locations around the world trust Vend to power their stores.
+                </h1>
+                <h4>We've been helping retailers start and grow their businesses for 10 years! Combined, our retailers
+                    have annual sales of more than <span>$10B NZD.</span></h4>
+            </div>
+
+            <div id="S2-4">
+                <ul id="fast-link">
+                    <li class="shortcut"><a href="#S3"><span class="hide2">Fast &#38; easy, cloud- <br> based
+                            </span>POS</a></li>
+                    <li class="shortcut"><a href="#S6">inventory <span class="hide2"><br>management </span></a></li>
+                    <li class="shortcut"><a href="#Third">Multi-outlet<span class="hide2"> <br> scalability</span> </a>
+                    </li>
+                    <li class="shortcut"><a href="#Forth"><span class="hide2">real-time <br></span> reporting</a></li>
+                    <li class="shortcut"><a href="#S10">ecommerce <span class="hide2"><br> integrations</span></a></li>
+                    <li class="shortcut"><a href="#S12"><span class="hide2">expert advice &#38; <br> </span>support</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="S3">
+            <div>
+                <h1 class="sub-heading">One of the world's easiest POS software to use</h1>
+                <p>We designed a user-friendly interface that's fast to use and easy to learn, minimizing training time.
+                    Works seamlessly with existing or new hardware. All your data is synced to the cloud and accessible
+                    from
+                    anywhere</p>
+                <a class="blue-link" href="https://www.vendhq.com/tour/point-of-sale">Learn more about Vend in-store
+                    Point of Sale <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section id="S4">
+            <div class="laptop">
+                <img height="fit-content" width="500px" src="images/POS-Image2-macbook_200109_001520.svg">
+                <div id="comp">
+                    <p>WORKS WITH</p>
+                    <div>
+                        <img class="sponsors" src="/images/icons/Ios-02.svg">
+                        <img class="sponsors" src="/images/icons/Ios-02.svg">
+                        <img class="sponsors" src="/images/icons/Ios-02.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="i-pad">
+                <video height="fit-content" width="600px" loop autoplay
+                    src="videos/POS-Video_200109_001521.mp4"></video>
+                <img height="fit-content" width="600px" src="/images/POS-Image1-ipad_200109_001520.svg">
+            </div>
+        </section>
+
+        <section id="S5">
+            <article id="S5-1">
+                <img class="pos" src="images/Step1-Image2-payments.svg">
+                <h1 class="sub-heading">Choose from the best payment solutions in retail</h1>
+                <p>Accept all the ways your customers want to pay with a seamless and secure checkout experience.
+                    Vend integrates with leading payment providers around the world saving you time and ensuring you get
+                    paid
+                </p>
+                <a class="blue-link" href="https://www.vendhq.com/tour/accept-payments"> Learn more about integrated
+                    payments <i class="fa fa-long-arrow-right"></i></a>
+            </article>
+
+            <section class="patrons">
+                <article class="patrons-top">
+                    <div class="patrons-info">
+                        <p class="patrons-p">
+                            "It's easy to work with all of the features within Vend.
+                            We can set things up correctly the first time and it's so simple for our staff to use."
+                        </p>
+                        <div class="patrons-span">
+                            <a class="yellow-img-link" href="https://www.vendhq.com/customers/great-yellow-brick"><img
+                                    src="images/icons/Great-Yellow-Brick-Co-logo_200109_002110.png" height="70px"
+                                    width="60px" alt="yellow-brick-logo">
+                            </a>
+                            <a class="blue-link" href="#">see how Great Yellow Brick created a unique retail experience
+                                with
+                                Vend
+                                <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="patrons-image">
+                        <a href="https://www.vendhq.com/customers/great-yellow-brick"><img class="yellow-img"
+                                src="images/Great-Yellow-Brick-photo_200109_002110.jpg" alt="yellow-brick"
+                                height="300px" width="400px"></a>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section id="S6">
+            <div class="abov">
+                <div id="S6-1">
+                    <h1 class="sub-heading">Powerful inventory management to help maximize your profits.</h1>
+                    <p>Manage inventory across multiple outlets with a centralised product catalog, accessible from your
+                        POS, back-office, or on the road. Edit products in bulk. Automatically reorder stock. Create
+                        variants and composites. Print labels and barcodes. We've even simplified stock-taking with our
+                        free
+                        app, <a href="https://www.vendhq.com/scanner">Scanner by Vend</a></p>
+
+                    <a class="blue-link" href="#">see how Great Yellow Brick created a unique retail experience with
+                        Vend
+                        <i class="fa fa-long-arrow-right"></i></a>
+
+                    <div class="scanning">
+                        <img src="images/Inventory-Image2-scanner_200109_003117.png" height="280px" width="250px"
+                            class="phon-snap">
+                        <img src="images/illustration slider.png" height="250px" width="100%" class="scrol">
+                    </div>
+                </div>
+                <div id="S6-2">
+                    <img src="images/Inventory-Image1-macbook_200109_003117.svg" alt="" height="660px" width="700px">
+                </div>
+            </div>
+        </section>
+
+        <section class="patrons">
+            <div class="patrons-top hide3">
+                <article class="patrons-info">
+                    <p class="patrons-p">
+                        “Vend supports our retail growth strategy very well. In the last 14 months, we've opened nine
+                        new stores
+                        which run Vend POS. It took less than a few hours max to set up each store.”
+                    </p>
+                    <div class="patrons-span">
+                        <a class="patrons-img-link" href="https://www.vendhq.com/customers/great-yellow-brick"><img
+                                src="images/icons/Linen-House-logo_200109_002930.png" height="20px" width="200px"
+                                alt="yellow-brick-logo">
+                        </a>
+
+                        <a class="blue-link" href="#">See how Linen House opened 9 new stores and saved with Vend <i
+                                class="fa fa-long-arrow-right"></i></a>
+                    </div>
+
+                </article>
+
+                <article class="patrons-image">
+                    <a href="#"><img src="images/Linen-House-photo_200109_003018.jpg" height="300px" width="400px"></a>
+                </article>
+            </div>
+
+            <div id="Third" class="patrons-bottom">
+                <div class="abov2">
+                    <h1 class="sub-heading">Multi-outlet functionality that scales with your business.</h1>
+                    <img src="images/illustration slider.png">
+                    <p>Vend makes it easy to add new outlets and registers as your business grows. All of
+                        Vend's key
+                        features including POS, inventory, and reporting are designed for multiple outlets so your
+                        business
+                        operates as one cohesive operation. Ecommerce integrations support fulfilment from any store.
+                    </p>
+                    <a class="green-link" href="https://www.vendhq.com/multi-store-pos">See how Vend works for retailers
+                        with
+                        multiple outlets <i class="fa fa-long-arrow-right"></i> </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="patrons">
+            <div class="patrons-top hide3">
+                <article class="patrons-info">
+
+                    <p class="patrons-p">
+                        “With Vend, we can literally launch a store in 5 minutes, add 20 registers, and set up multiple
+                        locations anywhere in the world.”
+                    </p>
+                    <div class="patrons-span">
+                        <a class="patrons-img-link" href="https://www.vendhq.com/customers/great-yellow-brick"><img
+                                src="images/icons/sennheiser-logo.png" height="20px" width="200px"
+                                alt="yellow-brick-logo">
+                        </a>
+                        <a class="blue-link" href="#">See how Sennheiser uses Vend to run a multi-outlet retail
+                            operation <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="patrons-image">
+                    <a href=""><img src="images/Sennheiser-photo_200109_003018.jpg" height="300px" width="400px"></a>
+                </article>
+            </div>
+
+            <div id="Forth" class="S8-bottom">
+                <div class="abov3">
+                    <h1 class="sub-heading">Real-time reporting for smarter business decisions.</h1>
+                    <article class="report">
+                        <div class="report-img">
+                            <img src="images/Reporting-Image1-dashboard.png" height="500px" width="800px">
+                        </div>
+                        <div class="report-com">
+                            <div>
+                                <p class="rep-p">Vend takes the guesswork out of decision-making with powerful sales and
+                                    inventory
+                                    reporting
+                                    that's
+                                    live and accurate to the minute. Help increase profitability with key retail metrics
+                                    including
+                                    sales, inventory levels, sell-through rates, margin and more. Access reports 24/7
+                                    from
+                                    anywhere.
+                                </p>
+                                <a class="blue-link" href="https://www.vendhq.com/multi-store-pos">See how Vend works
+                                    for
+                                    retailers with multiple outlets <i class="fa fa-long-arrow-right"></i> </a>
+                            </div>
+                            <div class="sub-intergrates">
+                                <p>Integrates with</p>
+                                <div>
+                                    <img class="sponsors" src="/images/icons/Ios-02.svg">
+                                    <img class="sponsors" src="/images/icons/Ios-02.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div>
+            <section class="patrons">
+                <div class="patrons-top hide3">
+                    <article class="patrons-info">
+                        <p class="patrons-p">
+                            “Using Vend is effortless and easy. I love being able to check the reports and access Vend
+                            from anywhere — even just from my phone when I'm out and about.”
+                        </p>
+                        <div class="patrons-span">
+                            <a class="patrons-img-link" href="https://www.vendhq.com/customers/great-yellow-brick"><img
+                                    src="images/icons/HealthPost-logo.png" height="30px" width="200px"
+                                    alt="yellow-brick-logo">
+                            </a>
+                            <a class="blue-link" href="#">See how HealthPost saw a 75% YOY increase in sales using Vend
+                                <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+
+                    </article>
+
+                    <article class="patrons-image">
+                        <a href=""><img src="images/HealthPost-photo.jpg" height="300px" width="400px"></a>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <section id="S10">
+            <div class="abov4">
+                <div class="ecommerce">
+                    <img class="E-item sh" height="115px" src="images/Ecommerce-Image1-shoe.svg" alt="">
+                    <img class="E-item ph" height="180px" src="images/Ecommerce-Image2-iphone.svg" alt="">
+                    <img class="E-item ta" height="230px" src="images/Ecommerce-Image3-ipad.svg" alt="">
+                    <img class="E-item la" height="300px" src="images/Ecommerce-Image4-macbook.svg" alt="">
+                </div>
+                <div class="S10-middle">
+                    <h1 class="sub-heading">Be everywhere with a choice of ecommerce integrations.</h1>
+                    <p>We've partnered with the world's leading ecommerce platforms to ensure you can meet the needs of
+                        your
+                        customers both online and in-store. Deliver faster and fulfil from any store with our seamless
+                        Shopify, Ecwid, BigCommerce and WooCommerce integrations.</p>
+                    <a class="blue-link" href="#">See how Vend can help you become an omnichannel retailer </a>
+                </div>
+                <div class="S10-bottom">
+                    <img height="100px" src="images/icons/Great-Yellow-Brick-Co-logo_200109_002110.png">
+                    <img height="100px" src="images/icons/Great-Yellow-Brick-Co-logo_200109_002110.png"
+                        id="woo-commerce">
+                    <img height="100px" src="images/icons/Great-Yellow-Brick-Co-logo_200109_002110.png"
+                     id="ecwid">
+                </div>
+            </div>
+
+        </section>
+
+        <div id="S11">
+            <section class="patrons">
+                <div class="patrons-top hide3">
+                    <article class="patrons-info">
+                        <p class="patrons-p">
+                            “Vend's integrations with Shopify and Xero have saved us time and allowed us to keep closer
+                            track of accounts and cash flow. Vend has allowed us to grow faster and to focus on
+                            growing.”
+                        </p>
+                        <div class="patrons-span">
+                            <a class="num-six-img-link" href="https://www.vendhq.com/customers/great-yellow-brick"><img
+                                    src="images/icons/Number-Six-logo.png" height="45px" width="120px"
+                                    alt="yellow-brick-logo">
+                            </a>
+                            <a class="blue-link" href="#">See how Number Six uses Vend to achieve 40% YOY retail growth
+                                <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="patrons-image">
+                        <a href=""><img src="images/Number-Six-photo.jpg" height="300px" width="400px"></a>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <section id="S12">
+            <div class="S12-left">
+                <h1 class="sub-heading">Award winning support. Expert advice to help you succeed.</h1>
+                <p>Our team of retail specialists is ready and waiting to get your business setup just right, and keep
+                    you growing from there. We're available by live chat, email and phone. Plus we offer personalised
+                    on-boarding packages for you and your team.</p>
+                <div id="book">
+                    <button class="book-btn">Book a consultation</button>
+                    <p>Or, call us now on <span>+1-844-942-2...</span></p>
+                </div>
+
+            </div>
+            <div class="S12-right">
+                <img src="/images/Support-Image1-team.svg" height="490px" width="650px">
+            </div>
+        </section>
+
+        <section id="S13">
+            <div class="S13-top">
+                <h1 class="sub-heading">You can trust Vend with your business.</h1>
+
+                <ul class="trust-grid">
+                    <li class="trust-reasons"><i class="fa fa-check-circle"></i> Your data is securely stored in the
+                        cloud and backed up every hour</li>
+                    <li class="trust-reasons"><i class="fa fa-check-circle"></i> Your data is securely stored in the
+                        cloud and backed up every hour</li>
+                    <li class="trust-reasons"><i class="fa fa-check-circle"></i> Your data is securely stored in the
+                        cloud and backed up every hour</li>
+                    <li class="trust-reasons"><i class="fa fa-check-circle"></i> Your data is securely stored in the
+                        cloud and backed up every hour</li>
+                </ul>
+
+                <a href="#" class="blue-link">Read more about security <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+
+            <div class="S13-bottom">
+                <ul class="list-of-other-users">
+                    <li>
+                        <a href="#"><img class="other-users" src="/images/Capterra_logo_home.png" alt=""></a>
+                        <img class="star" src="/images/star rating 1.png" alt="">
+                    </li>
+                    <li>
+                        <a href="#"><img class="other-users" src="/images/Trustpilot_logo_home1.png" alt=""></a>
+                        <img class="star" src="/images/star rating 1.png" alt="">
+                    </li>
+                    <li>
+                        <a href="#"><img class="other-users" src="/images/Getapp_logo_home.png" alt=""></a>
+                        <img class="star" src="/images/star rating 1.png" alt="">
+                    </li>
+                    <li>
+                        <a href="#"><img class="other-users" src="/images/Merchant-Maverick_logo_home.png" alt=""></a>
+                        <img class="star" src="/images/star rating 1.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="S14">
+            <div class="abov5">
+                <h1 class="sub-heading">Build your business on Vend's open platform.</h1>
+                <div class="S14-top-break">
+                    <img src="images/Platform-Image1-api.svg" alt="" height="40%" width="570x">
+                    <div>
+                        <p>Vend was the world's first cloud-based POS. We were founded 10 years ago by engineers
+                            with a passion for retail, so, naturally, a fully documented open API is built right
+                            into the heart of the product. Leverage the Vend platform to improve your own offering
+                            or simply integrate your existing business applications.</p>
+                        <a class="blue-link">Visit the developer hub and register as a developer <i
+                                class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="S14-bottom">
+                <div class="S14-bottom-left">
+                    <p>"This world's first project for Gasoline Alley Services (GAS) would have been impossible without
+                        Vend. The extensibility of Vend through the API and the support that we've received from the
+                        Vend team have been second to none."</p>
+                    <div>
+                        <img src="/images/GAS-logo.png" height="40px">
+                        <img src="/images/Choice-Technology-logo.png" class="CT-logo" height="40px">
+                    </div>
+                </div>
+                <img src="images/GAS-photo.jpg" class="gas-photo" alt="gas-photo" height="350px" width="400px">
+            </div>
+        </section>
+
+        <section id="S15">
+            <div class="S15-top" onclick="playAdd()">
+                <div id="play-vid">
+                    <i id="play-btn" class="fa fa-play-circle"></i>
+                    <p>watch video</p>
+                </div>
+                <div class="play-text">
+                    <h1>Discover how easy it is to transorm your retail business with Vend</h1>
+                    <p>Watch our demo to see why Vend is perfect for inventory based retailers like you</p>
+                </div>
+            </div>
+            <div class="S15-vid-mid">
+                <video height="400px" controls src="videos/Vend Demo Video 2.mp4" type="video/mp4"></video>
+            </div>
+            <div class="S15-bottom">
+                <h1 class="sub-heading">What are retailers saying about Vend?</h1>
+                <ul>
+                    <li>
+                        <p class="S15-ital-p">"Everything works simply and there are constant improvements."</p>
+                        <p>Jan <span style="font-weight: 300;">|</span><span>Mosey</span></p>
+                    </li>
+                    <li>
+                        <p class="S15-ital-p">"I love that they partnered with BigCommerce. A POS system that
+                            communicates with my website
+                            is a dream come true. Super affordable and I love the customer service."</p>
+                        <p>Leslie Neilson <span style="font-weight: 300;">|</span><span>inspired living</span></p>
+                    </li>
+                    <li>
+                        <p class="S15-ital-p">"Vend gives me great data to analyse and helps me decide which products
+                            are earning their
+                            keep and worth stocking in my shop."</p>
+                        <p>Cathy <span style="font-weight: 300;">|</span><span>The Quilting Shed</span></p>
+                    </li>
+                    <li>
+                        <p class="S15-ital-p">"I find Vend easy to navigate, and self explanatory. It's an excellent
+                            platform."</p>
+                        <p>Anonymous</span></p>
+                    </li>
+                    <li>
+                        <p class="S15-ital-p">"No downtime, new features all the time, and easy to use."</p>
+                        <p>Alex <span style="font-weight: 300;">|</span><span>Buster McGee</span></p>
+                    </li>
+                    <li>
+                        <p class="S15-ital-p">"Best retail program I have used in 30+ years in business"</p>
+                        <p>J.D. Hornberger <span style="font-weight: 300;">|</span><span>Port O'Call - San Marino</span>
+                        </p>
+                    </li>
+                </ul>
+                <a class="blue-link">Read more retailer stories <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section id="S16">
+            <div class="S16-top">
+                <div class="unlock-your-retail">
+                    <div class="unlock-left">
+                        <h1 class="sub-heading">Unlock your retail super power with Vend.</h1>
+                        <h4>We built Vend because we believe that technology can unlock more of what makes your retail
+                            store great: you.</h4>
+                        <p>You're the magic. You're the special sauce. You're your unfair competitive advantage. It’s
+                            your decisions every day—what to buy, how to curate your store, how to treat your
+                            customers—that make you successful.
+                        </p>
+                        <p>
+                            We built Vend because we believe, perhaps more than ever, that the world needs more
+                            passionate retailers like you.
+                        </p>
+                        <a class=" blue-link">Discover the 7 Steps of Successful Retailers <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                    <div class="unlock-right">
+                        <img src="images/Intro-Photo-Vaughan.svg" class="founder" height="100%" width="700px">
+                        <figcaption>Vaughan Fergusson, Founder <img src="images/icons/curved-arrow-use.png"
+                                height="70px" width="40px">
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+
+            <div class="S16-bottom">
+                <div class="S16B-top">
+                    <h1 class="sub-heading">Let's get started</h1>
+                    <p>Start your free trial and take Vend for a spin. Or have a chat with our team to find out if Vend
+                        is right for you and your business.
+                    </p>
+                </div>
+                <div class="S16B-bottom">
+                    <div class="con1">
+                        <h2>Try Vend Today!</h2>
+                        <p>Includes 24/7 access to support & advice to get you started. No commitment, no credit card
+                            required.</p>
+                        <a href="#"><button>Try Vend for free</button></a>
+                    </div>
+                    <div class="con2">
+                        <h2>Contact Vend</h2>
+                        <p>Our team of retail specialists are on hand to help. Tap the button to request a call-back at
+                            a time that suits you.</p>
+                        <a href="#"><button>Get in touch</button></a>
+                        <p>Or, call us now on <a class="call" onclick="showNumb()"><i
+                                    class="fa fa-phone">+1-844-942-2...</i></a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="top-footer">
+                <div class="TF-left">
+                    <div class="qq">
+                        <div class="TF-items" id="D1">
+                            <h3 class="remove-D3">company</h3>
+                            <ul>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                            </ul>
+                        </div>
+                        <div class="TF-items">
+                            <h3>help & support</h3>
+                            <ul>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="qq">
+                        <div class="TF-items" id="D2">
+                            <h3 class="remove-D3">programs</h3>
+                            <ul>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                            </ul>
+                        </div>
+                        <div class="TF-items">
+                            <h3>follow us</h3>
+                            <ul>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="qq">
+                        <div class="TF-items" id="D3">
+                            <h3 class="remove-D3">retail resources</h3>
+                            <ul>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                            </ul>
+                        </div>
+                        <div class="TF-items">
+                            <h3>the best of retail</h3>
+                            <ul>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                                <li>about us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="TF-right">
+                    <h3>region</h3>
+                    <ul>
+                        <li>about us</li>
+                        <li>about us</li>
+                        <li>about us</li>
+                        <li>about us</li>
+                        <li>about us</li>
+                        <li>about us</li>
+                        <li>about us</li>
+                        <li>about us</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="bottom-footer">
+                <a href="https://www.vendhq.com/terms-of-use">terms of use</a>
+                <a href="https://www.vendhq.com/privacy-policy">privacy policy</a>
+                <a href="#">site map</a>
+                <p>© 2010-2022 nevd<span>tm</span></p>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="scripts/functions.js"></script>
+
+</html>
