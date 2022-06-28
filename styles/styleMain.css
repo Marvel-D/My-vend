@@ -1,17 +1,16 @@
-
 #black-note {
   background-color: black;
   color: white;
   height: fit-content;
   padding: 10px;
   display: flex;
-  text-align: center;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  justify-content: space-between;
 }
 #black-note div {
   display: flex;
-  width: 50%;
+  margin-left: 28%;
 }
 #black-note a {
   color: white;
@@ -24,6 +23,7 @@
 .fa-times {
   border: 2px solid snow;
   border-radius: 20px;
+  cursor: pointer;
 }
 .patrons {
   margin-top: 30px;
@@ -154,7 +154,7 @@ video {
 }
 button {
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   color: white;
   font-weight: bold;
 }
@@ -876,13 +876,13 @@ nav p {
 .S10-bottom {
   margin-top: 60px;
   display: flex;
-  width: 50%;
+  width: 70%;
   justify-content: space-evenly;
+  filter: grayscale(100%);
 }
 
 .num-six-img-link {
   width: 25%;
-  border: 1px solid;
 }
 
 #S12 {
@@ -1211,8 +1211,14 @@ figcaption {
 .con1 {
   background-color: rgba(200, 231, 200, 0.587);
 }
+.con1 a button{
+  background-color: #41af4b;
+}
 .con2 {
   background-color: rgba(192, 192, 219, 0.288);
+}
+.con2 a button{
+  background-color: #485b68b5;
 }
 .S16B-bottom div h2 {
   font-size: 22px;
@@ -1229,18 +1235,15 @@ figcaption {
   margin-top: 20px;
   width: 200px;
   font-size: 17px;
-  background-color: #1881cc;
 }
 
 footer {
   width: 100%;
-  border: 4px solid green;
   background-color: #3a4953;
 }
 .top-footer {
   color: white;
-  margin-top: 10vh;
-  border: 1px solid;
+  padding-top: 15vh;
   display: grid;
   grid-template-columns: 70% 20%;
   justify-content: center;
@@ -1268,6 +1271,9 @@ footer {
   text-transform: capitalize;
   color: #bed9eb;
   margin-bottom: 15px;
+}
+.TF-items ul li:hover{
+  color: white;
 }
 #D1,
 #D2,
@@ -1319,7 +1325,12 @@ footer {
   color: white;
 }
 #footer-C li{
-  margin-bottom: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+#footer-C li:hover{
+  background-color: #4c616e;
 }
 #footer-C img {
   height: 15px;

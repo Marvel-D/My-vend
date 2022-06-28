@@ -162,6 +162,9 @@
 }
 
 @media screen and (max-width: 990px) {
+  #black-note div {
+    margin-left: 20%;
+  }
   .patrons-top {
     width: 75%;
   }
@@ -270,7 +273,7 @@
     width: 70%;
   }
   #woo-commerce {
-    margin-top: 120px;
+    margin-top: 80px;
   }
   .list-of-other-users {
     display: grid;
@@ -376,6 +379,9 @@
   }
 
   @media screen and (max-width: 769px) {
+    #black-note div {
+      margin-left: 7%;
+    }
     .hide1 {
       display: inline;
     }
@@ -621,14 +627,15 @@
       justify-content: flex-start;
     }
     #woo-commerce {
-      transform: translateX(-80px);
+      transform: translateX(-170px);
     }
     #ecwid {
-      transform: translateX(-70px);
+      transform: translateX(-190px);
     }
     .S12-left {
       width: 100%;
       padding: 70px;
+      transform: translate(15px);
     }
     .S12-right {
       display: none;
@@ -642,6 +649,9 @@
     #book button {
       width: 100%;
       margin-right: 0px;
+    }
+    .S13-top .blue-link{
+      margin-right: 50%;
     }
     .S13-top h1 {
       font-size: 40px;

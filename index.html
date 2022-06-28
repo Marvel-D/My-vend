@@ -19,7 +19,7 @@
                     <h3> Vend is officially Lightspeed! It's business as usual, only better. <a
                             href="https://www.vendhq.com/lightspeed">Learn More</a></h3>
                 </div>
-                <i class="fa fa-times" aria-hidden="true"></i>
+                <i class="fa fa-times" onclick="hideBb()"></i>
             </div>
             <section id="head">
                 <div class="head-left">
@@ -43,11 +43,21 @@
                                 <a href="https://www.vendhq.com/?_pcc=us-zWlSkuMRUDEC">
                                     <li><span>&#127760;</span>USA/Global</li>
                                 </a>
-                                <li><img src="images/icons/Flag_of_Australia.svg">Australia</li>
-                                <li><img src="images/icons/Flag_of_New_Zealand.svg">New Zealand</li>
-                                <li><img src="images/icons/Flag_of_South_Africa.svg">South Africa</li>
-                                <li><img src="images/icons/Flag_of_the_United_Kingdom.svg">United Kingdom</li>
-                                <li><span><i class="fa fa-globe"></i></span> Asia</li>
+                                <a href="https://www.vendhq.com/au/?_pcc=au-qDM5fPbHQvlV">
+                                    <li><img src="images/icons/Flag_of_Australia.svg">Australia</li>
+                                </a>
+                                <a href="https://www.vendhq.com/nz/?_pcc=nz-qDM5fPbHQvlV">
+                                    <li><img src="images/icons/Flag_of_New_Zealand.svg">New Zealand</li>
+                                </a>
+                                <a href="https://www.vendhq.com/za/?_pcc=za-qDM5fPbHQvlV">
+                                    <li><img src="images/icons/Flag_of_South_Africa.svg">South Africa</li>
+                                </a>
+                                <a href="https://www.vendhq.com/uk/?_pcc=uk-qDM5fPbHQvlV">
+                                    <li><img src="images/icons/Flag_of_the_United_Kingdom.svg">United Kingdom</li>
+                                </a>
+                                <a href="https://www.vendhq.com/asia/?_pcc=asia-qDM5fPbHQvlV">
+                                    <li><span><i class="fa fa-globe"></i></span> Asia</li>
+                                </a>
                             </ul>
                         </div>
                     </div>
@@ -780,10 +790,9 @@
                     <a class="blue-link" href="#">See how Vend can help you become an omnichannel retailer </a>
                 </div>
                 <div class="S10-bottom">
-                    <img height="100px" src="images/icons/Great-Yellow-Brick-Co-logo_200109_002110.png">
-                    <img height="100px" src="images/icons/Great-Yellow-Brick-Co-logo_200109_002110.png"
-                        id="woo-commerce">
-                    <img height="100px" src="images/icons/Great-Yellow-Brick-Co-logo_200109_002110.png" id="ecwid">
+                    <img height="50px" src="images/icons/Shopify_Logo.png">
+                    <img height="50px" src="images/icons/WooCommerce_logo.png" id="woo-commerce">
+                    <img height="50px" src="images/icons/Ecwid_Logo.png" id="ecwid">
                 </div>
             </div>
 
@@ -839,12 +848,12 @@
                 <ul class="trust-grid">
                     <li class="trust-reasons"><i class="fa fa-check-circle"></i> Your data is securely stored in the
                         cloud and backed up every hour</li>
-                    <li class="trust-reasons"><i class="fa fa-check-circle"></i> Your data is securely stored in the
-                        cloud and backed up every hour</li>
-                    <li class="trust-reasons"><i class="fa fa-check-circle"></i> Your data is securely stored in the
-                        cloud and backed up every hour</li>
-                    <li class="trust-reasons"><i class="fa fa-check-circle"></i> Your data is securely stored in the
-                        cloud and backed up every hour</li>
+                    <li class="trust-reasons"><i class="fa fa-check-circle"></i>Vend is compliant with PCI data security
+                        standard SAQ A-EP</li>
+                    <li class="trust-reasons"><i class="fa fa-check-circle"></i> The security of Vend's systems is
+                        regularly tested by independent auditors</li>
+                    <li class="trust-reasons"><i class="fa fa-check-circle"></i> Vend's service is highly reliable, so
+                        you can minimize interruptions.</li>
                 </ul>
 
                 <a href="#" class="blue-link">Read more about security <i class="fa fa-long-arrow-right"></i></a>
@@ -1015,21 +1024,33 @@
                             <h3 onclick="RFL1()" id="FDB1" class="remove-D1">company <i class="fa fa-chevron-down"></i>
                             </h3>
                             <ul id="FDL1" class="VS">
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
+                                <a href="https://www.vendhq.com/about-us">
+                                    <li>about us</li>
+                                </a>
+                                <a href="https://www.vendhq.com/careers">
+                                    <li>careers</li>
+                                </a>
+                                <a href="https://www.vendhq.com/media">
+                                    <li>media</li>
+                                </a>
+                                <a href="https://www.vendhq.com/vend-brand-guidelines">
+                                    <li>band guidelines</li>
+                                </a>
+                                <a href="https://www.vendhq.com/blog/">
+                                    <li>blog</li>
+                                </a>
+                                <a href="https://www.vendhq.com/security">
+                                    <li>security</li>
+                                </a>
                             </ul>
                         </div>
                         <div class="TF-items">
                             <h3 onclick="RFL2()" id="FDB2">help & support <i class="fa fa-chevron-down"></i></h3>
                             <ul id="FDL2" class="VS">
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
+                                <a href="https://www.vendhq.com/contact-locations"><li>contact us</li></a>
+                                <a href="https://www.vendhq.com/contact-sales"><li>contact sales</li></a>
+                                <a href="https://support.vendhq.com/hc/en-us?_ga=2.248193095.1129510293.1656250436-1351299249.1653922252"><li>help centre</li></a>
+                                <a href="https://www.vendhq.com/faq"><li>FAQs</li></a>
                             </ul>
                         </div>
                     </div>
@@ -1038,22 +1059,22 @@
                             <h3 onclick="RFL3()" id="FDB3" class="remove-D2">programs <i class="fa fa-chevron-down"></i>
                             </h3>
                             <ul id="FDL3" class="VS">
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
+                                <a href="https://www.vendhq.com/partners/advisors"><li>advisor program</li></a>
+                                <a href="https://www.vendhq.com/partners/resellers"><li>reseller program</li></a>
+                                <a href="https://www.vendhq.com/partners/experts"><li>expert program</li></a>
+                                <a href="https://www.vendhq.com/partners/developers"><li>developer program</li></a>
                             </ul>
                         </div>
                         <div class="TF-items">
                             <h3 onclick="RFL4()" id="FDB4">follow us <i class="fa fa-chevron-down"></i></h3>
                             <ul id="FDL4" class="VS">
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
+                                <a href=""><li>vend blog</li></a>
+                                <a href="https://twitter.com/vendhq"><li>twitter</li></a>
+                                <a href="https://www.facebook.com/Vend.POS"><li>facebook</li></a>
+                                <a href="https://www.linkedin.com/company/vendhq-com/"><li>linkedin</li></a>
+                                <a href="https://www.youtube.com/user/VendHQ"><li>youtube</li></a>
+                                <a href="https://www.instagram.com/vendhq/"><li>instagram</li></a>
+                                <a href="https://www.pinterest.nz/vendhq/"><li>pinterest</li></a>
                             </ul>
                         </div>
                     </div>
@@ -1062,22 +1083,22 @@
                             <h3 onclick="RFL5()" id="FDB5" class="remove-D3">retail resources <i
                                     class="fa fa-chevron-down"></i></h3>
                             <ul id="FDL5" class="VS">
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
+                                <a href="https://www.vendhq.com/pos-system-buyers-guide"><li>POS stytem buyers guide</li></a>
+                                <a href="https://www.vendhq.com/excel-inventory-template"><li>inventory excel template</li></a>
+                                <a href="https://www.vendhq.com/retail-dictionary"><li>retail dictionary</li></a>
                             </ul>
                         </div>
                         <div class="TF-items">
                             <h3 onclick="RFL6()" id="FDB6">the best of retail <i class="fa fa-chevron-down"></i></h3>
                             <ul id="FDL6" class="VS">
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
-                                <li>about us</li>
+                                <a href="https://www.vendhq.com/pos-system"><li><span>i</span>Pad POS</li></a>
+                                <a href="https://www.vendhq.com/pos-system"><li>POS system</li></a>
+                                <a href="https://www.vendhq.com/multi-store-pos"><li>multi store POS</li></a>
+                                <a href="https://www.vendhq.com/epos-software"><li>EPOS software</li></a>
+                                <a href="https://www.vendhq.com/tour/ecommerce-solutions"><li>POS Ecommerce</li></a>
+                                <a href="https://www.vendhq.com/online-cash-register-software"><li>POS cash register</li></a>
+                                <a href="https://www.vendhq.com/epos-system"><li>EPOS system</li></a>
+                                <a href="https://www.vendhq.com/scanner"><li>POS barcode scanner</li></a>
                             </ul>
                         </div>
                     </div>
@@ -1096,11 +1117,21 @@
                                 <a href="https://www.vendhq.com/?_pcc=us-zWlSkuMRUDEC">
                                     <li><span>&#127760;</span>USA/Global</li>
                                 </a>
-                                <li><img src="images/icons/Flag_of_Australia.svg">Australia</li>
-                                <li><img src="images/icons/Flag_of_New_Zealand.svg">New Zealand</li>
-                                <li><img src="images/icons/Flag_of_South_Africa.svg">South Africa</li>
-                                <li><img src="images/icons/Flag_of_the_United_Kingdom.svg">United Kingdom</li>
-                                <li><span><i class="fa fa-globe"></i></span> Asia</li>
+                                <a href="https://www.vendhq.com/au/?_pcc=au-qDM5fPbHQvlV">
+                                    <li><img src="images/icons/Flag_of_Australia.svg">Australia</li>
+                                </a>
+                                <a href="https://www.vendhq.com/nz/?_pcc=nz-qDM5fPbHQvlV">
+                                    <li><img src="images/icons/Flag_of_New_Zealand.svg">New Zealand</li>
+                                </a>
+                                <a href="https://www.vendhq.com/za/?_pcc=za-qDM5fPbHQvlV">
+                                    <li><img src="images/icons/Flag_of_South_Africa.svg">South Africa</li>
+                                </a>
+                                <a href="https://www.vendhq.com/uk/?_pcc=uk-qDM5fPbHQvlV">
+                                    <li><img src="images/icons/Flag_of_the_United_Kingdom.svg">United Kingdom</li>
+                                </a>
+                                <a href="https://www.vendhq.com/asia/?_pcc=asia-qDM5fPbHQvlV">
+                                    <li><span><i class="fa fa-globe"></i></span> Asia</li>
+                                </a>
                             </ul>
                         </div>
 
@@ -1127,5 +1158,6 @@
 <script src="scripts/functions.js"></script>
 <script src="scripts/slidingEvents.js"></script>
 <script src="scripts/footerFunctions.js"></script>
+<script src="scripts/hideBlack.js"></script>
 
 </html>
