@@ -57,7 +57,6 @@
     margin-top: 40px;
   }
   #S3 div {
-    border: 2px solid red;
     width: 80%;
     height: fit-content;
   }
@@ -86,7 +85,6 @@
     align-self: flex-end;
   }
   #S5-1 {
-    border: 1px solid rgb(68, 0, 255);
     height: fit-content;
   }
   #S5-1 img {
@@ -152,7 +150,6 @@
   }
   figcaption {
     width: fit-content;
-    border: 1px solid;
     transform: translate(-250px, 350px);
   }
   figcaption img {
