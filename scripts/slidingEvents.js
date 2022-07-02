@@ -14,6 +14,10 @@ const IA7 = document.querySelector("#IA7");
 const IA8 = document.querySelector("#IA8");
 
 
+const MIs = document.querySelectorAll(".missing-images");
+
+
+
 const nav = document.querySelector("nav");
 
 function slide() {
@@ -68,75 +72,21 @@ function slide() {
 
 
     if (document.documentElement.scrollTop > 4190) {
-            IA1.style.height = "50px";
-            IA8.style.height = '50px'
-            IA7.style.height = '50px'
-            IA2.style.height = '50px'
-            IA3.style.height = '50px'
-            IA4.style.height = '50px'
-            IA5.style.height = '50px'
-            IA6.style.height = '50px'
-
-            IA1.style.transition = "all 1.5s";
-            IA8.style.transition = 'all 3s'
-            IA7.style.transition = 'all 4.5s'
-            IA4.style.transition = 'all 3s'
-            IA5.style.transition = 'all 1.5s'
-            IA6.style.transition = 'all 3s'
-            IA3.style.transition = 'all 1.5s'
-            IA2.style.transition = 'all 3s'
+        MIs.forEach(e => {
+            e.style.height = "50px";
+            e.style.transition = "all .5s";
+        });
+        IA2.style.transitionDelay = "4s"; 
+        IA3.style.transitionDelay = "7s"; 
+        IA4.style.transitionDelay = "3s"; 
+        IA5.style.transitionDelay = "2s"; 
+        IA6.style.transitionDelay = "5s"; 
+        IA7.style.transitionDelay = "6s";
+        IA8.style.transitionDelay = "1s";  
     }
 
 }
 
-
-// if (document.documentElement.scrollTop > 45) {
-//     nav.style.position = "fixed";
-// } else {
-//     nav.style.position = "";
-// }
-
 window.onscroll = function () {
     slide();
 };
-
-// nav.addEventListener("scroll", slide());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// window.addEventListener("scroll", slide2)
-// window.onscroll = function () {
-//     slide2();
-// };
